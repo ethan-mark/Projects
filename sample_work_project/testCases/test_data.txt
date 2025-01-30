@@ -1,0 +1,45 @@
+PbxId: degrootlogistics
+Extension: 100
+FirstName: Rob's Line
+LastName:
+Branch: DeGroot Logistics Chicago Office
+Department: N/A
+External_Inbound_Total: 4
+External_Inbound_Answered: 4
+External_Inbound_Abandoned: 0
+Percent_External_Inbound_Answered: 100
+External_Inbound_Missed: 0
+External_Outbound_Total: 0
+External_Outbound_Answered: 0
+Percent_External_Outbound_Answered: 0
+External_Outbound_Abandoned: 0
+Internal_Inbound_Total: 0
+Internal_Inbound_Answered: 0
+Internal_Inbound_Abandoned: 0
+Internal_Inbound_Missed: 0
+Internal_Outbound_Total: 0
+Internal_Outbound_Answered: 0
+Internal_Outbound_Abandoned: 0
+Inbound_Total: 4
+Inbound_Answered: 4
+Inbound_Abandoned: 0
+Inbound_Missed: 0
+Total_Calls_To_VM: 0
+Outbound_Total: 0
+Outbound_Answered: 0
+Outbound_Abandoned: 0
+Total_Answered: 4
+Total_Abandoned: 0
+Total_Missed: 0
+Total_Ring_Time: 25986
+Total_Talk_Time: 258193
+Total_Abandoned_Time: 0
+Total_Call_Time: 284179
+Avg_Ring_Time: 6497
+Avg_Talk_Time: 64548
+Inbound_Talk_Time: 258193
+Outbound_Talk_Time: 0
+Avg_Abandoned_Time: 0
+Email:
+UserName:
+ServiceType: RG

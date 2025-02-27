@@ -1,0 +1,1467 @@
+html {
+  overflow-x: hidden;
+
+  width: 100%;
+}
+
+.top-body {
+  background-image: url("../img/background-section.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.top-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* Centers content horizontally */
+  align-items: center;
+  /* Centers content vertically */
+  text-align: center;
+  /* Full height */
+  width: 100%;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  max-width: 100%;
+}
+
+.top-div-section {
+  max-width: 70%;
+
+  background: rgba(65, 99, 140, 0.8);
+
+  color: #f5f5f5;
+  padding: 40px;
+  border-radius: 12px;
+  margin-top: 23vh;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+
+  /* ✅ Adds depth */
+}
+
+.top-div-section .full-potential {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-div-section p {
+  text-align: center;
+  margin: 0, auto;
+  font-size: 25px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.big-button-container {
+  padding: 3vh 0;
+}
+
+.big-button-container:hover + .right-arrow {
+  margin-left: 15px;
+}
+
+.big-test-button {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  border: 1px;
+  border-radius: 8px;
+  background-color: #9acd32;
+  border-color: #7c4bab;
+  width: auto;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease-in-out;
+  opacity: 1 !important;
+  text-decoration: none;
+  min-width: 200px;
+  /* ✅ Prevents it from being too small */
+  max-width: 350px;
+  /* ✅ Ensures it doesn’t get too large */
+  padding: 30px 25px;
+}
+
+.big-test-button:hover {
+  background-color: #ff9900;
+  /* Orange on hover */
+}
+
+.big-test-button:active {
+  background-color: #ff9900;
+  /* Orange on click */
+}
+
+.right-arrow {
+  max-width: 5%;
+  margin-top: -5px;
+  margin-left: 10px;
+  vertical-align: middle;
+  color: white;
+  justify-content: center;
+  filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg)
+    brightness(110%) contrast(110%);
+}
+
+.three-panel-container {
+  padding-top: 27vh;
+  text-align: center;
+}
+
+.mind-icon {
+  display: block;
+  width: 100px;
+  /* Adjust size */
+  height: auto;
+  margin: 8px 0 0;
+  padding: 0;
+  filter: brightness(0) invert(1);
+}
+
+.mind-icon-wrapper,
+.planning-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* ✅ Ensures everything is centered */
+  justify-content: center;
+  width: 100%;
+  /* ✅ Makes sure it fits mobile screens */
+  max-width: 90vw;
+  /* ✅ Prevents overflow issues */
+  margin: 0 auto;
+  /* ✅ Centers content */
+  gap: 20px;
+  /* ✅ Reduces space between panels for mobile */
+}
+
+.container-middle .panel-collapsible {
+  color: lightblue;
+  font-size: 40px;
+  background: transparent;
+  border: none;
+}
+
+.panel-collapsible h3 {
+  margin-bottom: 1px;
+  padding: 0 2vw 0;
+}
+
+.container-middle p {
+  font-size: 25px;
+  line-height: 1.5;
+
+  padding: 0 10px;
+}
+
+.container-middle .left-panel {
+  width: 90vw;
+
+  /* ✅ Makes sure it fits mobile screens */
+  max-width: 500px;
+  /* ✅ Prevents it from being too large */
+  height: auto;
+  /* ✅ Allows panels to adjust dynamically */
+  padding: 15px;
+  /* ✅ Ensures spacing is good */
+  background: linear-gradient(135deg, #1a1f36, #3a506b);
+  color: #f8f9fa;
+
+  border-radius: 12px;
+  margin-top: -5vh;
+  border-left: 5px solid #007bff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+}
+
+.container-middle .left-panel:hover {
+  transform: translateY(-5px);
+  /* ✅ Moves panel slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  /* ✅ Enhances depth */
+}
+
+.planning-icon {
+  display: block;
+  width: 100px;
+  /* Adjust size */
+  height: auto;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.container-middle .middle-panel {
+  width: 90vw;
+
+  /* ✅ Makes sure it fits mobile screens */
+  max-width: 500px;
+  /* ✅ Prevents it from being too large */
+  height: auto;
+  /* ✅ Allows panels to adjust dynamically */
+  padding: 15px;
+  /* ✅ Ensures spacing is good */
+  background: linear-gradient(135deg, #1a1f36, #3a506b);
+  color: #f8f9fa;
+  border-radius: 10px;
+  margin-top: -5vh;
+  border-left: 5px solid #ffb400;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+}
+
+.container-middle .middle-panel:hover {
+  transform: translateY(-5px);
+  /* ✅ Moves panel slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  /* ✅ Enhances depth */
+}
+
+.container-middle .right-panel {
+  width: 90vw;
+  /* ✅ Makes sure it fits mobile screens */
+  max-width: 500px;
+  /* ✅ Prevents it from being too large */
+  height: auto;
+  /* ✅ Allows panels to adjust dynamically */
+  padding: 15px;
+  /* ✅ Ensures spacing is good */
+  background: linear-gradient(135deg, #1a1f36, #3a506b);
+  color: #f8f9fa;
+  color: #f8f9fa;
+  border-radius: 10px;
+  margin-top: -5vh;
+  border-left: 5px solid #28a745;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+}
+
+.takecontrol-icon {
+  display: block;
+  width: 100px;
+  /* Adjust size */
+  height: auto;
+  margin: -5px 0 0;
+  padding: 0;
+  filter: brightness(0) invert(1);
+}
+
+.takecontrol-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-middle .right-panel:hover {
+  transform: translateY(-5px);
+  /* ✅ Moves panel slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  /* ✅ Enhances depth */
+}
+
+.inner-video-container video {
+  height: 100%;
+  width: 100%;
+}
+
+.panel-on-video {
+  text-align: center;
+  width: 40vw;
+  height: auto;
+  max-height: 80vh;
+  background: rgba(58, 80, 107, 0.75);
+  color: #f8f9fa;
+  margin: 25vh 2vw 10vh;
+  border-radius: 15px;
+  padding: 1vh 30px 5vh;
+
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+  position: absolute;
+}
+
+.pane-on-video:hover {
+  transform: translateY(-5px);
+  /* ✅ Moves panel slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  /* ✅ Enhances depth */
+}
+
+.panel-on-video h3 {
+  font-size: 60px;
+}
+
+.panel-on-video p {
+  color: white;
+  font-size: 25px;
+  padding-bottom: 2vh;
+}
+
+.panel-content {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}
+
+.collapsed {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.react-player {
+  width: 100vw !important;
+  height: 110vh !important;
+
+  padding: 0;
+  object-fit: cover;
+
+  /* Centers the player */
+}
+
+.down-arrow-container {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  display: none;
+}
+
+/* Testimonies */
+
+.testimony-panel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+  margin-top: -6vh;
+  background: linear-gradient(135deg, #1a1f36, #3a506b);
+}
+
+.testimony-header {
+  font-size: 40px;
+  color: #f5f5f5;
+}
+
+.testimony-container-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* ✅ Ensures everything is centered */
+  justify-content: center;
+  width: 100%;
+  /* ✅ Makes sure it fits mobile screens */
+  max-width: 90vw;
+  /* ✅ Prevents overflow issues */
+  margin: 0 auto 9vh;
+  /* ✅ Centers content */
+  gap: 60px;
+  /* ✅ Reduces space between panels for mobile */
+}
+
+.testimony-left-panel,
+.testimony-middle-panel,
+.testimony-right-panel {
+  width: 90vw;
+
+  /* ✅ Makes sure it fits mobile screens */
+  max-width: 500px;
+  /* ✅ Prevents it from being too large */
+  height: 60vh;
+  /* ✅ Allows panels to adjust dynamically */
+  padding: 15px;
+  /* ✅ Ensures spacing is good */
+  /*background: linear-gradient(135deg, #1a1f36, #3a506b);*/
+  color: #f8f9fa;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 15px;
+  margin-top: -5vh;
+  border-color: lightblue;
+  /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);*/
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+}
+
+.testimony-container-middle .panel-collapsible {
+  color: lightblue;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+}
+
+.testimony-container-middle .panel-collapsible h3 {
+  margin-bottom: 1px;
+  padding: 0 2vw 0;
+  color: #f3f3f3;
+}
+
+.testimony-container-middle .panel-collapsible p {
+  font-size: 23px;
+  line-height: 1.5;
+  padding: 0 10px;
+  color: #f3f3f3;
+  text-wrap: balance;
+}
+
+.testimony-container-middle .whiteman-icon,
+.whitewoman-icon,
+.hispanicman-icon {
+  width: 150px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 17vw;
+  background-color: #231f20;
+  margin-top: -5.5vh;
+}
+
+.footer-container .links-container {
+  padding-top: 10vh;
+}
+
+.conditions-container {
+  align-items: left;
+}
+
+.footer-container .links-container .conditions-container h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: right;
+}
+
+.footer-container .links-container .conditions-container li {
+  text-align: left;
+  padding: 0 0 2vh;
+  cursor: pointer;
+}
+
+.footer-container .links-container .conditions-container ul {
+  list-style: none;
+  color: white;
+  font-size: 30px;
+}
+
+.logo-description img {
+  width: 500px;
+}
+
+.social-media-container {
+  padding-top: 10vh;
+  color: white;
+}
+
+.social-media-container h2 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.media-icons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+  padding-bottom: 5vh;
+}
+
+.facebook-icon,
+.linkedin-icon {
+  display: block;
+  width: 85px;
+  /* Adjust size */
+  height: auto;
+  margin: 8px 0 0;
+  padding: 0;
+  filter: brightness(0) invert(1);
+}
+
+.instagram-icon {
+  display: block;
+  width: 95px;
+  /* Adjust size */
+  height: auto;
+  margin: 8px 0 0;
+  margin-top: 3px;
+  padding: 0;
+  filter: brightness(0) invert(1);
+}
+
+.icon-div {
+  pointer-events: all;
+  cursor: pointer !important;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15vh 10vw 0;
+  background: gray;
+}
+
+.about-us-wrapper h1 {
+  font-size: 40px;
+}
+
+.about-us-wrapper p {
+  font-size: 25px;
+}
+
+.top-header-photo-wrapper img {
+  width: 600px;
+}
+
+/* Macbook 14 inch*/
+@media screen and (max-width: 1520px) {
+  .top-section {
+    margin-top: -20px;
+  }
+
+  .top-div-section p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .container-middle {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .container-middle .panel-collapsible {
+    color: lightblue;
+    font-size: 35px;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+  }
+
+  .container-middle .left-panel {
+    max-width: 1450px;
+  }
+
+  .container-middle .middle-panel {
+    max-width: 1450px;
+  }
+
+  .container-middle .right-panel {
+    max-width: 1450px;
+  }
+
+  .panel-collapsible h3 {
+    margin-bottom: 1px;
+    padding: 0 2vw 0;
+  }
+
+  .container-middle p {
+    font-size: 30px;
+    line-height: 1.5;
+
+    padding: 0 10px;
+  }
+
+  .panel-on-video {
+    width: 40vw;
+    height: auto;
+    margin: 25vh 4vw 0;
+    padding: 25px 10px 30px;
+  }
+
+  .panel-on-video h3 {
+    font-size: 35px;
+  }
+
+  .panel-on-video p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .testimony-panel-container {
+    margin-bottom: -5px;
+    margin-top: -11.5vh;
+  }
+
+  .testimony-header {
+    font-size: 30px;
+  }
+
+  .testimony-container-middle .panel-collapsible h3 {
+    margin-bottom: 1px;
+    padding: 0 2vw 0;
+  }
+
+  .testimony-container-middle .panel-collapsible p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .logo-description img {
+    width: 430px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20vh;
+    background-color: #231f20;
+  }
+
+  .footer-container .links-container {
+    margin-top: 1vh;
+  }
+
+  .conditions-container {
+    align-items: left;
+  }
+
+  .testimony-left-panel,
+  .testimony-middle-panel,
+  .testimony-right-panel {
+    height: 580px;
+  }
+
+  .footer-container .links-container .conditions-container h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .footer-container .links-container .conditions-container li {
+    text-align: left;
+    padding: 0 0 2vh;
+
+    vertical-align: top;
+  }
+
+  .footer-container .links-container .conditions-container ul {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .social-media-container {
+    padding-top: 11vh;
+    color: white;
+  }
+
+  .social-media-container h2 {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .media-icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .facebook-icon,
+  .instagram-icon,
+  .linkedin-icon {
+    display: block;
+    width: 60px;
+    /* Adjust size */
+    height: auto;
+    margin: 8px 0 0;
+    padding: 0;
+    filter: brightness(0) invert(1);
+  }
+}
+
+/*LAPTOP VIEW */
+
+@media screen and (max-width: 1024px) {
+  .top-body {
+    max-width: 1024px;
+  }
+
+  .big-button-container {
+    padding-top: 2vw;
+  }
+
+  .big-test-button {
+    padding: 2vh;
+  }
+
+  .top-div-section {
+    padding: 5vh;
+  }
+
+  .container-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: -10vh auto 0;
+    gap: 90px;
+  }
+
+  .container-middle .left-panel {
+    max-width: 870px;
+  }
+
+  .container-middle .middle-panel {
+    max-width: 870px;
+  }
+
+  .container-middle .right-panel {
+    max-width: 870px;
+  }
+
+  .panel-on-video {
+    width: 40vw;
+    height: auto;
+    margin-top: 30vh;
+    margin-left: 4vw;
+    padding: 15px;
+  }
+
+  .inner-video-container {
+    margin-top: -25vh;
+  }
+
+  .react-player {
+    width: 100vw !important;
+    height: 110vh !important;
+  }
+
+  .panel-on-video h3 {
+    font-size: 35px;
+  }
+
+  .panel-on-video p {
+    color: white;
+    font-size: 15px;
+  }
+
+  .testimony-panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    margin-top: -24vh;
+    padding-bottom: 6vh;
+  }
+
+  .testimony-header {
+    font-size: 35px;
+
+    text-wrap: balance;
+  }
+
+  .testimony-container-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ✅ Ensures everything is centered */
+    justify-content: center;
+    width: 100%;
+    /* ✅ Makes sure it fits mobile screens */
+    max-width: 90vw;
+    /* ✅ Prevents overflow issues */
+    margin: 0 auto;
+    /* ✅ Centers content */
+    gap: 100px;
+    /* ✅ Reduces space between panels for mobile */
+  }
+
+  .testimony-left-panel,
+  .testimony-middle-panel,
+  .testimony-right-panel {
+    width: 90vw;
+
+    /* ✅ Makes sure it fits mobile screens */
+    max-width: 725px;
+    /* ✅ Prevents it from being too large */
+    height: auto;
+    /* ✅ Allows panels to adjust dynamically */
+    padding: 15px;
+    /* ✅ Ensures spacing is good */
+    background: linear-gradient(135deg, #1a1f36, #3a506b);
+    color: #f8f9fa;
+
+    border-radius: 1px;
+    margin-top: -5vh;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    /* ✅ Adds depth */
+    transition: 0.3s ease-in-out;
+  }
+
+  .testimony-container-middle .panel-collapsible {
+    color: lightblue;
+
+    background: transparent;
+    border: none;
+    text-align: center;
+  }
+
+  .testimony-container-middle .panel-collapsible h3 {
+    margin-bottom: 1px;
+    padding: 0 2vw 0;
+  }
+
+  .testimony-container-middle .panel-collapsible p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .testimony-container-middle .mind-icon,
+  .planning-icon,
+  .takecontrol-icon {
+    width: 90px;
+  }
+
+  .logo-description img {
+    width: 430px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: #231f20;
+    align-items: center;
+  }
+
+  .footer-container .links-container {
+    margin-top: -15vh;
+  }
+
+  .conditions-container {
+    align-items: left;
+  }
+
+  .footer-container .links-container .conditions-container h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .footer-container .links-container .conditions-container li {
+    text-align: left;
+    padding: 0 0 2vh;
+    vertical-align: top;
+    margin-left: -4vw;
+  }
+
+  .footer-container .links-container .conditions-container ul {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .social-media-container {
+    padding-top: 5vh;
+    color: white;
+  }
+
+  .social-media-container h2 {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .media-icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .facebook-icon,
+  .linkedin-icon {
+    display: block;
+    width: 60px;
+    /* Adjust size */
+    height: auto;
+    margin: 8px 0 0;
+    padding: 0;
+    filter: brightness(0) invert(1);
+  }
+
+  .instagram-icon {
+    width: 70px;
+    margin-top: 2.5px;
+  }
+}
+
+/*TABLET VIEW */
+
+@media screen and (max-width: 768px) {
+  .top-body {
+    width: auto;
+  }
+
+  .top-div-section {
+    padding: 5vh;
+  }
+
+  .top-div-section .full-potential {
+    font-size: 40px;
+  }
+
+  .top-div-section p {
+    font-size: 25px;
+    margin: 4vh -3.5vw;
+  }
+
+  .big-button-container {
+    padding-top: 2vw;
+  }
+
+  .container-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 90px;
+    text-align: center;
+    max-width: auto;
+    margin: -10vh auto 0;
+  }
+
+  .panel-collapsible {
+    display: block !important;
+    /* Ensures the button is visible */
+    width: 100%;
+    /* Full width for better touch accessibility */
+    background: linear-gradient(135deg, #1a1f36, #3a506b);
+    /* Match panel background */
+    color: lightblue;
+    font-size: 30px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .panel-collapsible h3 {
+    margin: 0;
+    padding: 10px;
+    color: inherit;
+  }
+
+  .big-test-button:focus {
+    background-color: #9acd32;
+    /* ✅ Ensures it resets */
+    outline: none;
+    /* Removes default focus border */
+  }
+
+  .planning-icon,
+  .mind-icon,
+  .takecontrol-icon {
+    display: block;
+    width: 50px;
+    /* Adjust size */
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .panel-on-video {
+    width: auto;
+    height: auto;
+    margin-top: 85vh;
+
+    padding: 5vh;
+  }
+
+  .inner-video-container {
+    margin-top: -20vh;
+  }
+
+  .react-player {
+    width: 100vw !important;
+    height: 110vh !important;
+  }
+
+  .panel-on-video h3 {
+    font-size: 40px;
+  }
+
+  .panel-on-video p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .testimony-panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimony-header {
+    font-size: 35px;
+    padding-top: 25vh;
+    text-wrap: balance;
+  }
+
+  .testimony-container-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ✅ Ensures everything is centered */
+    justify-content: center;
+    width: 100%;
+    /* ✅ Makes sure it fits mobile screens */
+    max-width: 90vw;
+    /* ✅ Prevents overflow issues */
+    margin: 0 auto;
+    /* ✅ Centers content */
+    gap: 100px;
+    /* ✅ Reduces space between panels for mobile */
+  }
+
+  .testimony-left-panel,
+  .testimony-middle-panel,
+  .testimony-right-panel {
+    width: 90vw;
+
+    /* ✅ Makes sure it fits mobile screens */
+    max-width: 500px;
+    /* ✅ Prevents it from being too large */
+    height: auto;
+    /* ✅ Allows panels to adjust dynamically */
+    padding: 15px;
+    /* ✅ Ensures spacing is good */
+    background: linear-gradient(135deg, #1a1f36, #3a506b);
+    color: #f8f9fa;
+
+    border-radius: 1px;
+    margin-top: -5vh;
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    /* ✅ Adds depth */
+    transition: 0.3s ease-in-out;
+  }
+
+  .testimony-container-middle .panel-collapsible {
+    color: lightblue;
+
+    background: transparent;
+    border: none;
+    text-align: center;
+  }
+
+  .testimony-container-middle .panel-collapsible h3 {
+    margin-bottom: 1px;
+    padding: 0 2vw 0;
+  }
+
+  .testimony-container-middle .panel-collapsible p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .testimony-container-middle .mind-icon,
+  .planning-icon,
+  .takecontrol-icon {
+    width: 90px;
+  }
+
+  .logo-description img {
+    width: 430px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: #231f20;
+    align-items: center;
+  }
+
+  .footer-container .links-container {
+    margin-top: -15vh;
+  }
+
+  .conditions-container {
+    align-items: left;
+  }
+
+  .footer-container .links-container .conditions-container h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .footer-container .links-container .conditions-container li {
+    text-align: left;
+    padding: 0 0 2vh;
+    vertical-align: top;
+    margin-left: -4vw;
+  }
+
+  .footer-container .links-container .conditions-container ul {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .social-media-container {
+    padding-top: 5vh;
+    color: white;
+  }
+
+  .social-media-container h2 {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .media-icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .facebook-icon,
+  .linkedin-icon {
+    display: block;
+    width: 60px;
+    /* Adjust size */
+    height: auto;
+    margin: 8px 0 0;
+    padding: 0;
+    filter: brightness(0) invert(1);
+  }
+
+  .instagram-icon {
+    width: 70px;
+    margin-top: 2.5px;
+  }
+}
+
+/*MOBILE VIEW Phone*/
+@media screen and (max-width: 500px) {
+  .top-body {
+    width: auto;
+  }
+
+  .top-div-section .full-potential {
+    font-size: 30px;
+  }
+
+  .top-div-section p {
+    font-size: 18px;
+    margin: 4vh -3.5vw;
+  }
+
+  .top-div-section {
+    margin-top: 18vh;
+  }
+
+  .big-button-container {
+    padding-bottom: 4vh;
+  }
+
+  .big-test-button {
+    padding: 15px 15px;
+    font-size: 30px;
+  }
+
+  .container-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 90px;
+    text-align: center;
+    max-width: auto;
+    margin: -13vh auto 0;
+  }
+
+  .container-middle h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .container-middle p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .panel-collapsible {
+    display: block !important;
+    /* Ensures the button is visible */
+    width: 100%;
+    /* Full width for better touch accessibility */
+    background: linear-gradient(135deg, #1a1f36, #3a506b);
+    /* Match panel background */
+    color: lightblue;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .panel-collapsible h3 {
+    margin: 0;
+
+    color: inherit;
+  }
+
+  .big-test-button:focus {
+    background-color: #9acd32;
+    /* ✅ Ensures it resets */
+    outline: none;
+    /* Removes default focus border */
+  }
+
+  .mind-icon,
+  .planning-icon,
+  .takecontrol-icon {
+    display: block;
+    width: 90px;
+    /* Adjust size */
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .panel-on-video {
+    width: 70vw;
+    height: auto;
+    margin-top: 72vh;
+    background: rgba(58, 80, 107, 1);
+
+    padding: 1vh 45px 3vh;
+  }
+
+  .inner-video-container {
+    margin-top: -40vh;
+  }
+
+  .panel-on-video h3 {
+    font-size: 35px;
+  }
+
+  .panel-on-video p {
+    color: white;
+    font-size: 20px;
+  }
+
+  .down-arrow-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .down-arrow {
+    /* Ensures the button is visible */
+    max-width: 12%;
+
+    color: white;
+
+    filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg)
+      brightness(110%) contrast(110%);
+  }
+
+  .right-arrow {
+    max-width: 10%;
+  }
+
+  .testimony-panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    margin-top: 29vh;
+  }
+
+  .testimony-header {
+    font-size: 20px;
+    margin-top: -25vh;
+    text-wrap: pretty;
+  }
+
+  .testimony-container-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ✅ Ensures everything is centered */
+    justify-content: center;
+    width: 100%;
+    /* ✅ Makes sure it fits mobile screens */
+    max-width: 90vw;
+    /* ✅ Prevents overflow issues */
+    margin: 0 auto;
+    /* ✅ Centers content */
+    gap: 100px;
+    /* ✅ Reduces space between panels for mobile */
+  }
+
+  .testimony-left-panel,
+  .testimony-middle-panel,
+  .testimony-right-panel {
+    width: 80vw;
+
+    /* ✅ Makes sure it fits mobile screens */
+    max-width: 500px;
+    /* ✅ Prevents it from being too large */
+    height: auto;
+    /* ✅ Allows panels to adjust dynamically */
+    padding: 15px;
+    /* ✅ Ensures spacing is good */
+
+    color: #f8f9fa;
+
+    border-radius: 15px;
+    margin-top: -5vh;
+
+    /* ✅ Adds depth */
+    transition: 0.3s ease-in-out;
+  }
+
+  .testimony-container-middle .panel-collapsible {
+    color: lightblue;
+
+    background: transparent;
+    border: none;
+    text-align: center;
+  }
+
+  .testimony-container-middle .panel-collapsible h3 {
+    margin-bottom: 1px;
+    padding: 0 2vw 0;
+  }
+
+  .testimony-container-middle .panel-collapsible p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .testimony-container-middle .mind-icon,
+  .planning-icon,
+  .takecontrol-icon {
+    width: 90px;
+  }
+
+  .logo-description img {
+    width: 300px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #231f20;
+  }
+
+  .footer-container .links-container {
+    margin-top: -15vh;
+  }
+
+  .conditions-container {
+    align-items: left;
+  }
+
+  .footer-container .links-container .conditions-container h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .footer-container .links-container .conditions-container li {
+    text-align: left;
+    padding: 0 0 2vh;
+    vertical-align: top;
+  }
+
+  .footer-container .links-container .conditions-container ul {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .social-media-container {
+    padding-top: 5vh;
+    color: white;
+  }
+
+  .social-media-container h2 {
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .media-icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .facebook-icon,
+  .linkedin-icon {
+    display: block;
+    width: 60px;
+    /* Adjust size */
+    height: auto;
+    margin: 8px 0 0;
+    padding: 0;
+    filter: brightness(0) invert(1);
+  }
+
+  .instagram-icon {
+    width: 70px;
+    margin-top: 2.5px;
+  }
+}

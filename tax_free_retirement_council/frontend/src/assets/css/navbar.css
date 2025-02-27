@@ -1,0 +1,286 @@
+.navbar {
+  background-color: #3a506b;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 105px;
+}
+
+.navbar-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  margin-left: 0;
+}
+
+.navbar-left img {
+  width: 200px;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.navbar-left .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  width: 19vw;
+}
+
+.Home-Button {
+  height: 120px;
+  /* ✅ Limits image height */
+  width: auto;
+
+  /* ✅ Keeps proportions */
+  object-fit: contain;
+  /* ✅ Ensures it doesn't distort */
+  background-color: #3a506b;
+}
+
+.navbar-center {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  gap: 2rem;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 0.5rem;
+}
+
+.navbar-center .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  transition: color 0.3s;
+  font-family: "Garamond", serif;
+  font-weight: 700;
+}
+
+.nav-links a:visited {
+  color: white;
+  /* Ensures visited links remain white */
+}
+
+.nav-links a:hover {
+  color: #f4a261;
+  /* Change color on hover */
+}
+
+.nav-links a:active {
+  color: white;
+}
+
+.navbar-center .nav-links a:hover {
+  color: #f4a261;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.navbar-right {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 18px;
+}
+
+.test-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px;
+  border-radius: 8px;
+  margin-top: -15px;
+  background-color: #9acd32;
+  border-color: #7c4bab;
+
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+  min-width: 150px;
+  /* ✅ Prevents it from being too small */
+  max-width: 350px;
+  /* ✅ Ensures it doesn’t get too large */
+  padding: 20px 5px;
+}
+
+.test-button:hover {
+  background-color: #ff9900;
+}
+
+@media screen and (max-width: 1520px) {
+  .navbar-center .nav-links a {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .navbar-center .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+  }
+}
+
+/* Up to Tablet View  */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-center {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #222;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .navbar-left .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    width: 20vw;
+  }
+
+  .navbar-center.open {
+    display: flex;
+  }
+
+  .nav-links {
+    list-style-type: none;
+
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-links a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    display: block;
+    transition: background 0.3s;
+    text-decoration: none;
+  }
+
+  .nav-links li {
+    margin: 0.8rem 0;
+  }
+
+  .test-button {
+    display: none;
+  }
+}
+
+/*MOBILE VIEW */
+@media screen and (max-width: 500px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-center {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #222;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .navbar-left .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    width: 20vw;
+  }
+
+  .navbar-center.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    list-style-type: none;
+
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-links a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    display: block;
+    transition: background 0.3s;
+    text-decoration: none;
+  }
+
+  .nav-links li {
+    margin: 0.8rem 0;
+  }
+
+  .panel-collapsible {
+    display: block;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: #ccc;
+  }
+}

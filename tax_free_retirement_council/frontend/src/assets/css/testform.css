@@ -1,0 +1,1399 @@
+.main-container {
+  background: url("../img/testform-background.jpg");
+  color: #1a1f36;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* ✅ Ensures everything is centered */
+  justify-content: center;
+  width: 100%;
+  /* ✅ Makes sure it fits mobile screens */
+  max-width: 100vw;
+  /* ✅ Prevents overflow issues */
+  margin: 0 auto;
+  gap: 45px;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.description-main-container {
+  background: rgba(0, 0, 0, 0.4);
+  /* Slightly dark transparent background */
+  padding: 10px 25px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 80%;
+  max-width: 100vw;
+}
+
+.description-main-container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 6vw;
+  color: #f5f5f5;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.description-main-container p {
+  font-size: 25px;
+  text-align: center;
+  padding: 0 5vw;
+  color: #f5f5f5;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-weight: 450;
+}
+
+.outer-survey-container {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.landing-panel h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-wrap: wrap;
+  color: #f5f5f5;
+}
+
+.landing-panel p {
+  font-size: 25px;
+  text-align: center;
+
+  color: #f5f5f5;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-weight: 450;
+}
+
+.survey-container {
+  /*background: #899499;*/
+  /*background: rgba(65, 99, 140, 1);*/
+  background-color: #3a506b;
+
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3a506b;
+  border-radius: 15px;
+  width: 90%;
+  height: auto;
+  max-height: 700px;
+  /* ✅ Makes sure it fits mobile screens */
+  max-width: 1000px;
+  /* ✅ Prevents it from being too large */
+  /* ✅ Allows panels to adjust dynamically */
+  padding: 15px 50px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  /* Softer, more premium look */
+  border: 3px solid #cbd5e1;
+  transition: all 1s ease-in-out;
+}
+
+.survey-container:hover {
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.survey-panel {
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.select-multiple {
+  font-size: 35px;
+
+  margin: 0;
+  text-transform: none;
+  color: gold;
+  margin-left: -5vw;
+  margin-top: -3vh;
+  margin-bottom: 2vh;
+  font-weight: 700;
+}
+
+.survey-panel h3 {
+  color: #f3f3f3;
+
+  /* Classy muted blue */
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  text-wrap: balance;
+  padding: 0;
+}
+
+.survey-panel ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+
+  padding: 4vh 0;
+}
+
+.survey-panel li {
+  list-style: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: #f8fafc;
+  font-size: 30px;
+  width: 400px;
+  font-family: "Poppins", sans-serif;
+}
+
+.survey-panel li:hover,
+.survey-panel li.selected {
+  background: #e0ecff;
+  border-color: #1a73e8;
+  color: #1a1f36;
+  font-weight: 600;
+}
+
+.survey-panel button:hover {
+  transform: scale(1.03);
+}
+
+.survey-panel hr {
+  border-width: 2px;
+}
+
+.survey-panel .index {
+  margin: auto;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.calendar-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.calendar-icon {
+  display: block;
+  width: 70px;
+  /* Adjust size */
+  height: auto;
+  margin: 1px 0 0;
+  padding: 0;
+}
+
+.piggy-icon {
+  display: block;
+  width: 100px;
+  /* Adjust size */
+  height: auto;
+  margin: 1px 0 0;
+  padding: 0;
+  margin-right: -5vw;
+}
+
+.money-icon {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 1px 0 0;
+  padding: 0;
+  margin-right: -10px;
+}
+
+.clipboard-icon {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 1px 0 0;
+  padding: 0;
+  margin-right: -25px;
+}
+
+.hourglass-icon {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 1px 0 0;
+  padding: 0;
+  margin-right: -10px;
+}
+
+.map-icon {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 1px 0 0;
+  padding: 0;
+  margin-right: -10px;
+}
+
+.details-checkmark-icon {
+  display: block;
+  width: 80px;
+  height: auto;
+  margin: 1px 0 0;
+  padding: 0;
+  margin-right: -10px;
+}
+
+.survey-panel .q3-container li {
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.unchecked-box {
+  width: 30px;
+  /* Adjust size */
+  height: auto;
+  margin: 1px 0 0;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.survey-panel .q3-container li.selected {
+  background: #e0ecff;
+  border-color: #1a73e8;
+  color: #1a1f36;
+  font-weight: 600;
+}
+
+.form-list {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: auto;
+  max-width: 500px;
+  text-align: left;
+  margin: 0;
+  align-items: left;
+}
+
+.form-row {
+  /* Stack label above input */
+  gap: 5px;
+  margin-left: -26px;
+}
+
+.form-list label {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  /* Ensures labels are aligned at the colon */
+  padding-left: 10px;
+}
+
+.form-list input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.test-form-nav-bar {
+  width: 100%;
+}
+
+.nav-arrows-container {
+  display: flex;
+  justify-content: space-between;
+  /* Left and right alignment */
+  align-items: center;
+  /* Center the arrows vertically */
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* 🔙 Left Arrow */
+.nav-arrow-left {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  filter: invert(99%) sepia(30%) saturate(2%) hue-rotate(182deg) brightness(111%) contrast(100%);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 10%;
+  margin-top: 10px;
+}
+
+.nav-arrow-left-form {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  filter: invert(99%) sepia(30%) saturate(2%) hue-rotate(182deg) brightness(111%) contrast(100%);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 10%;
+  margin-top: 10px;
+}
+
+.nav-arrow-left img {
+  width: 500px;
+}
+
+.nav-arrow-right img {
+  width: 500px;
+}
+
+.nav-arrow-left:hover {
+  color: white;
+}
+
+/* 🔜 Right Arrow */
+.nav-arrow-right {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  filter: invert(99%) sepia(30%) saturate(2%) hue-rotate(182deg) brightness(111%) contrast(100%);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 10%;
+  margin-top: 10px;
+}
+
+.nav-arrow-right:disabled {
+  filter: invert(58%) sepia(7%) saturate(1289%) hue-rotate(179deg) brightness(92%) contrast(89%);
+}
+
+.nav-arrow-right:hover {
+  color: white;
+}
+
+.big-test-button {
+  width: auto;
+}
+
+.state-selector {
+  margin: 50px 0 100px;
+  width: 100%;
+}
+
+.state-selector:select {
+  background-color: transparent;
+}
+
+.calendly-inline-widget {
+  max-width: 800px;
+  width: 90%;
+  height: 1000px;
+  /* ✅ Increased height for better visibility */
+  margin-top: 20px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.congrats-page {
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px;
+
+  /* ✅ Increased padding for better spacing */
+  height: 60vh;
+  /* ✅ Changed from fixed height to auto */
+  min-height: 70vh;
+  /* ✅ Ensures it takes enough space */
+  overflow-y: auto;
+  /* ✅ Allows scrolling only if needed */
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+}
+
+.congrats-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 25vh;
+  /* ✅ Adds spacing before Calendly widget */
+}
+
+.congrats-header h2 {
+  font-size: 3rem;
+  /* ✅ Slightly smaller to maintain balance */
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.congrats-header p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  font-weight: 400;
+  margin-bottom: 15px;
+  /* ✅ Adds spacing */
+}
+
+.congrats-header .schedule-p {
+  font-size: 1.2rem;
+  text-wrap: balance;
+  font-weight: 600;
+  color: #f4b400;
+  margin-bottom: 20px;
+  /* ✅ Adds extra space before the widget */
+}
+
+@media screen and (max-width: 1520px) {
+  .main-container {
+    background-position: center;
+  }
+
+  .survey-container {
+    width: 70vw;
+    max-height: 675px;
+  }
+
+  .survey-panel ul {
+    flex-direction: column;
+  }
+
+  .survey-panel li {
+    font-size: 30px;
+    width: 450px;
+  }
+
+  .survey-panel h3 {
+    font-size: 40px;
+    text-wrap: balance;
+  }
+
+  .landing-panel h1 {
+    font-size: 50px;
+  }
+
+  .landing-panel p {
+    font-size: 30px;
+  }
+
+  /* 🔙 Left Arrow */
+  .nav-arrow-left {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .nav-arrow-left img {
+    width: 70px;
+  }
+
+  .nav-arrow-right img {
+    width: 70px;
+  }
+
+  .nav-arrow-left:hover {
+    color: white;
+  }
+
+  /* 🔜 Right Arrow */
+  .nav-arrow-right {
+    width: 50px;
+    height: 50px;
+
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .form-row {
+    /* Stack label above input */
+    gap: 5px;
+
+    margin-left: 26px;
+  }
+
+  .nav-arrow-left-form {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 50%;
+    margin-top: 10px;
+    margin-right: -35px;
+  }
+
+  .nav-arrow-left-form img {
+    width: 70px;
+    margin-top: 17vh;
+  }
+
+  .form-list label {
+    font-size: 16px;
+    font-weight: 600;
+
+    /* Ensures labels are aligned at the colon */
+  }
+
+  .test-form-nav-bar {
+    padding-bottom: 5vh;
+  }
+
+  .form-list input {
+    width: 350px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .big-test-button {
+    width: auto;
+  }
+
+  .calendly-inline-widget {
+    width: 100%;
+    max-width: 1100px;
+    min-width: 800px;
+    height: 600px;
+    border: 0;
+  }
+
+  .congrats-page {
+    width: 75%;
+    max-width: 1350px;
+    margin: auto;
+  }
+
+  .congrats-header {
+    text-align: center;
+
+    padding-top: 35vh;
+  }
+
+  .congrats-header h2 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .congrats-header p {
+    font-size: 24px;
+    line-height: 1.5;
+    text-wrap: balance;
+  }
+
+  .congrats-header .schedule-p {
+    font-size: 28px;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .main-container {
+    background-position: center;
+  }
+
+  .survey-container {
+    width: 70vw;
+    max-height: 1000px;
+  }
+
+  .survey-panel ul {
+    flex-direction: column;
+  }
+
+  .survey-panel li {
+    font-size: 35px;
+    width: 450px;
+  }
+
+  .survey-panel h3 {
+    font-size: 45px;
+    text-wrap: pretty;
+  }
+
+  .landing-panel h1 {
+    font-size: 50px;
+  }
+
+  .piggy-icon {
+    margin-right: -35px;
+  }
+
+  .landing-panel p {
+    font-size: 30px;
+  }
+
+  .calendar-icon {
+    margin-right: -39px;
+  }
+
+  .nav-arrows-container {
+    display: flex;
+
+    justify-content: center;
+    /* Left and right alignment */
+    align-items: center;
+    /* Center the arrows vertically */
+    width: 100%;
+    margin-top: -15px;
+    position: relative;
+  }
+
+  /* 🔙 Left Arrow */
+  .nav-arrow-left {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .nav-arrow-left img {
+    width: 70px;
+  }
+
+  .nav-arrow-right img {
+    width: 70px;
+  }
+
+  .nav-arrow-left:hover {
+    color: white;
+  }
+
+  /* 🔜 Right Arrow */
+  .nav-arrow-right {
+    width: 50px;
+    height: 50px;
+
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .form-list {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    text-align: left;
+    margin: 0;
+    align-items: left;
+    padding-bottom: 12vh;
+  }
+
+  .form-row {
+    /* Stack label above input */
+    gap: 5px;
+
+    margin-left: 26px;
+  }
+
+  .form-list label {
+    font-size: 16px;
+    font-weight: 600;
+
+    /* Ensures labels are aligned at the colon */
+  }
+
+  .form-list input {
+    width: 350px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .test-form-nav-bar {
+    padding-bottom: 5vh;
+  }
+
+  .big-test-button {
+    width: auto;
+  }
+
+  .calendly-inline-widget {
+    width: 100%;
+    max-width: 750px;
+    min-width: 500px;
+    height: 600px;
+    border: 0;
+  }
+
+  .congrats-page {
+    width: 75%;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .congrats-header {
+    text-align: center;
+
+    padding-top: 30vh;
+  }
+
+  .congrats-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .congrats-header p {
+    font-size: 19px;
+    line-height: 1.5;
+    text-wrap: balance;
+  }
+
+  .congrats-header .schedule-p {
+    font-size: 24px;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+
+  .form-list {
+    gap: 10px;
+    padding: 10px;
+    margin: 25px;
+  }
+
+  .state-selector {
+    margin: 50px 0 50px;
+    width: 100%;
+  }
+
+  .unchecked-box {
+    width: 25px;
+    /* Adjust size */
+
+    padding-right: 1px;
+  }
+
+  .nav-arrow-left-form {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 50%;
+    margin-top: 10px;
+    margin-right: -35px;
+  }
+
+  .nav-arrow-left-form img {
+    width: 50px;
+    margin-top: 17vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    background-position: center;
+  }
+
+  .description-main-container h1 {
+    font-size: 30px;
+  }
+
+  .description-main-container p {
+    font-size: 20px;
+  }
+
+  .survey-container {
+    width: 70vw;
+    margin-top: auto;
+    height: auto;
+    max-height: 600px;
+    position: relative;
+  }
+
+  .survey-panel h3 {
+    font-size: 25px;
+  }
+
+  .survey-panel ul {
+    flex-direction: column;
+  }
+
+  .survey-panel li {
+    font-size: 20px;
+    width: 250px;
+    padding: 15px;
+  }
+
+  .calendar-icon-wrapper {
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .landing-panel h1 {
+    font-size: 35px;
+    padding: 0 -5vw;
+  }
+
+  .landing-panel p {
+    font-size: 20px;
+  }
+
+  .nav-arrows-container {
+    display: flex;
+
+    justify-content: center;
+    /* Left and right alignment */
+    align-items: end;
+    /* Center the arrows vertically */
+    width: 100%;
+    margin-top: -15px;
+    position: relative;
+  }
+
+  /* 🔙 Left Arrow */
+  .nav-arrow-left {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .nav-arrow-left img {
+    width: 50px;
+  }
+
+  .nav-arrow-right img {
+    width: 50px;
+  }
+
+  .nav-arrow-left:hover {
+    color: white;
+  }
+
+  /* 🔜 Right Arrow */
+  .nav-arrow-right {
+    width: 50px;
+    height: 50px;
+
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  .form-list {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    text-align: left;
+    margin: 0;
+    align-items: left;
+    padding-bottom: 12vh;
+  }
+
+  .form-row {
+    /* Stack label above input */
+    gap: 5px;
+
+    margin-left: 26px;
+  }
+
+  .form-list label {
+    font-size: 16px;
+    font-weight: 600;
+
+    /* Ensures labels are aligned at the colon */
+  }
+
+  .form-list input {
+    width: 350px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .test-form-nav-bar {
+    padding-bottom: 5vh;
+  }
+
+  .big-test-button {
+    width: auto;
+  }
+
+  .calendly-inline-widget {
+    width: 100%;
+    max-width: 500px;
+    min-width: 320px;
+    height: 600px;
+    border: 0;
+  }
+
+  .congrats-page {
+    width: 75%;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .congrats-header {
+    text-align: center;
+
+    padding-top: 25vh;
+  }
+
+  .congrats-header h2 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .congrats-header p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-wrap: balance;
+  }
+
+  .congrats-header .schedule-p {
+    font-size: 19px;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+
+  .form-list {
+    gap: 10px;
+    padding: 10px;
+    margin: 25px;
+  }
+
+  .state-selector {
+    margin: 50px 0 50px;
+    width: 100%;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar-left img {
+    width: 150px;
+    margin-left: 10px;
+    margin-top: -18px;
+  }
+
+  .unchecked-box {
+    width: 25px;
+    /* Adjust size */
+
+    padding-right: 1px;
+  }
+
+  .nav-arrow-left-form {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 50%;
+    margin-top: 10px;
+    margin-right: -35px;
+  }
+
+  .nav-arrow-left-form img {
+    width: 50px;
+    margin-top: 17vh;
+  }
+
+  .calendar-icon {
+    width: 50px;
+    margin-left: -4vw;
+  }
+
+  .piggy-icon {
+    width: 60px;
+    margin-left: -4vw;
+  }
+
+  .clipboard-icon {
+    width: 50px;
+    margin-left: -4vw;
+  }
+
+  .hourglass-icon {
+    width: 50px;
+    margin-left: -1vw;
+  }
+
+  .map-icon {
+    width: 50px;
+    margin-left: -1vw;
+  }
+
+  .details-checkmark-icon {
+    width: 40px;
+    margin-left: -55vw;
+    padding-top: 3vh;
+    margin-bottom: -7.5vh;
+  }
+
+  .select-multiple {
+    font-size: 25px;
+
+    margin: 0;
+    text-transform: none;
+    color: gold;
+
+    margin-top: -3vh;
+    margin-bottom: 2vh;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    background-position: center;
+    position: absolute;
+  }
+
+  .description-main-container h1 {
+    font-size: 30px;
+  }
+
+  .description-main-container p {
+    font-size: 20px;
+  }
+
+  .survey-container {
+    width: 65vw;
+
+    max-height: 560px;
+  }
+
+  .survey-panel h3 {
+    font-size: 25px;
+  }
+
+  .survey-panel ul {
+    flex-direction: column;
+
+    margin: 0 auto;
+    gap: 10px;
+
+    padding: 1vh 0 10vh;
+  }
+
+  .survey-panel li {
+    font-size: 20px;
+    width: 250px;
+    padding: 10px;
+  }
+
+  .calendar-icon-wrapper {
+    gap: 5px;
+    flex-direction: column;
+  }
+
+  .calendar-icon {
+    width: 50px;
+    margin-left: -40px;
+  }
+
+  .piggy-icon {
+    width: 60px;
+    margin-left: -33px;
+  }
+
+  .landing-panel h1 {
+    font-size: 25px;
+    margin: 35px -5px 0;
+    text-wrap: balance;
+  }
+
+  .landing-panel p {
+    font-size: 16px;
+    text-wrap: pretty;
+  }
+
+  .nav-arrows-container {
+    display: flex;
+
+    justify-content: center;
+    /* Left and right alignment */
+    align-items: end;
+    /* Center the arrows vertically */
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  /* 🔙 Left Arrow */
+  .nav-arrow-left {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 50%;
+    margin-top: 10px;
+    margin-right: -50px;
+  }
+
+  .nav-arrow-left img {
+    width: 50px;
+  }
+
+  .nav-arrow-right img {
+    width: 50px;
+  }
+
+  .nav-arrow-left:hover {
+    color: white;
+  }
+
+  /* 🔜 Right Arrow */
+  .nav-arrow-right {
+    width: 50px;
+    height: 50px;
+
+    width: 50%;
+    margin-top: 10px;
+    margin-left: -50px;
+  }
+
+  .form-list {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    text-align: left;
+    margin: 0;
+    align-items: left;
+    padding-bottom: 12vh;
+  }
+
+  .form-row {
+    /* Stack label above input */
+    gap: 5px;
+
+    margin-left: 26px;
+  }
+
+  .form-list label {
+    font-size: 16px;
+    font-weight: 600;
+
+    /* Ensures labels are aligned at the colon */
+  }
+
+  .form-list input {
+    width: 170px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .test-form-nav-bar {
+    padding-bottom: 5vh;
+  }
+
+  .big-test-button {
+    width: auto;
+  }
+
+  .calendly-inline-widget {
+    width: 100%;
+    max-width: 400px;
+    min-width: 320px;
+    height: 600px;
+    border: 0;
+  }
+
+  .congrats-page {
+    width: 75%;
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .congrats-header {
+    text-align: center;
+
+    padding-top: 43vh;
+  }
+
+  .congrats-header h2 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .congrats-header p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-wrap: balance;
+  }
+
+  .congrats-header .schedule-p {
+    font-size: 19px;
+    text-wrap: balance;
+    font-weight: 700;
+  }
+
+  .form-list {
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+
+  .state-selector {
+    margin: 50px 0 50px;
+    width: 100%;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar-left img {
+    width: 150px;
+    margin-left: 10px;
+    margin-top: -18px;
+  }
+
+  .unchecked-box {
+    width: 25px;
+    /* Adjust size */
+
+    padding-right: 1px;
+  }
+
+  .nav-arrow-left-form {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    width: 50%;
+    margin-top: 10px;
+    margin-right: -35px;
+  }
+
+  .nav-arrow-left-form img {
+    width: 50px;
+    margin-top: 17vh;
+    margin-left: -12vw;
+  }
+
+  .clipboard-icon {
+    width: 50px;
+
+    margin-left: -9vw;
+  }
+
+  .hourglass-icon {
+    width: 50px;
+    margin-left: -3vw;
+  }
+
+  .map-icon {
+    width: 50px;
+    margin-right: -1px;
+  }
+
+  .details-checkmark-icon {
+    width: 40px;
+    margin-left: -57vw;
+    padding-top: 4vh;
+    margin-bottom: -10vh;
+  }
+
+  .select-multiple {
+    font-size: 25px;
+
+    margin: 0;
+    text-transform: none;
+    color: gold;
+
+    margin-top: -3vh;
+    margin-bottom: 2vh;
+    font-weight: 700;
+  }
+}

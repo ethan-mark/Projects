@@ -1,0 +1,630 @@
+html {
+  overflow-x: hidden;
+}
+
+.top-body {
+  background-image: url("../img/background-section.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.top-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* Centers content horizontally */
+  align-items: center;
+  /* Centers content vertically */
+  text-align: center;
+  /* Full height */
+  width: 100%;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  max-width: 100%;
+}
+
+.top-div-section {
+  max-width: 70%;
+
+  background: rgba(65, 99, 140, 0.8);
+
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  margin-top: 25vh;
+  font-weight: bold;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+
+  /* ✅ Adds depth */
+}
+
+.top-div-section .full-potential {
+  text-align: center;
+  margin: 0, auto;
+  font-size: 60px;
+}
+
+.top-div-section p {
+  text-align: center;
+  margin: 0, auto;
+  font-size: 35px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.big-button-container {
+  padding: 2vh 0;
+}
+
+.big-button-container:hover+.right-arrow {
+  margin-left: 15px;
+}
+
+.big-test-button {
+  color: white;
+  font-weight: bold;
+  font-size: 27px;
+  border: 1px;
+  border-radius: 8px;
+  height: 5vw;
+  background-color: #9acd32;
+  border-color: #7c4bab;
+  width: 18rem;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease-in-out;
+  opacity: 1 !important;
+  z-index: 10;
+}
+
+.big-test-button:hover {
+  background-color: #ff9900;
+  /* Orange on hover */
+}
+
+.big-test-button:active {
+  background-color: #ff9900;
+  /* Orange on click */
+}
+
+.right-arrow {
+  max-width: 12%;
+  margin-top: -5px;
+  margin-left: 10px;
+  vertical-align: middle;
+  color: white;
+  justify-content: center;
+  filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
+}
+
+.three-panel-container {
+  padding-top: 30vh;
+  text-align: center;
+}
+
+.mind-icon {
+  display: block;
+  width: 100px;
+  /* Adjust size */
+  height: auto;
+  margin: 8px 0 0;
+  padding: 0;
+  filter: brightness(0) invert(1);
+}
+
+.mind-icon-wrapper,
+.planning-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+  gap: 50px;
+  padding: 10vh 30px 10vh;
+  max-width: 100%;
+}
+
+.container-middle .panel-collapsible {
+  color: lightblue;
+  font-size: 40px;
+  background: transparent;
+  border: none;
+  padding: 10px 0;
+}
+
+.panel-collapsible h3 {
+  margin-bottom: 1px;
+  padding: 0 2vw 0;
+}
+
+.container-middle p {
+  font-size: 25px;
+  line-height: 1.5;
+
+  padding: 0 10px;
+}
+
+.container-middle .left-panel {
+  width: 110vw;
+  height: auto;
+
+  background: linear-gradient(135deg, #1a1f36, #3a506b);
+  color: #f8f9fa;
+  padding: 0 2vw 10px;
+  border-radius: 12px;
+  margin-top: -5vh;
+  border-left: 5px solid #007bff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+}
+
+.container-middle .left-panel:hover {
+  transform: translateY(-5px);
+  /* ✅ Moves panel slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  /* ✅ Enhances depth */
+}
+
+.planning-icon {
+  display: block;
+  width: 100px;
+  /* Adjust size */
+  height: auto;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.container-middle .middle-panel {
+  width: 110vw;
+  height: auto;
+  background: linear-gradient(135deg, #1a1f36, #3a506b);
+  color: #f8f9fa;
+  padding: 0 2vw 10px;
+  border-radius: 10px;
+  margin-top: -5vh;
+  border-left: 5px solid #ffb400;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+}
+
+.container-middle .middle-panel:hover {
+  transform: translateY(-5px);
+  /* ✅ Moves panel slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  /* ✅ Enhances depth */
+}
+
+.container-middle .right-panel {
+  width: 110vw;
+  height: auto;
+
+  background: linear-gradient(135deg, #1a1f36, #3a506b);
+  color: #f8f9fa;
+  color: #f8f9fa;
+  padding: 10px 2vw;
+  border-radius: 10px;
+  margin-top: -5vh;
+  border-left: 5px solid #28a745;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+}
+
+.takecontrol-icon {
+  display: block;
+  width: 100px;
+  /* Adjust size */
+  height: auto;
+  margin: -5px 0 0;
+  padding: 0;
+  filter: brightness(0) invert(1);
+}
+
+.takecontrol-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container-middle .right-panel:hover {
+  transform: translateY(-5px);
+  /* ✅ Moves panel slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  /* ✅ Enhances depth */
+}
+
+.inner-video-container video {
+  height: 100%;
+  width: 100%;
+}
+
+.panel-on-video {
+  text-align: center;
+  width: 40vw;
+  height: 80vh;
+  background: linear-gradient(135deg, #1a1f36, #3a506b);
+  color: #f8f9fa;
+  margin: 13vh 2vw 10vh;
+  border-radius: 15px;
+  padding: 0 30px;
+
+  /* ✅ Adds depth */
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  opacity: 80%;
+}
+
+.pane-on-video:hover {
+  transform: translateY(-5px);
+  /* ✅ Moves panel slightly up */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  /* ✅ Enhances depth */
+}
+
+.panel-on-video h3 {
+  font-size: 60px;
+}
+
+.panel-on-video p {
+  color: white;
+  font-size: 40px;
+}
+
+.panel-content {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}
+
+.collapsed {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.react-player {
+  width: 100vw !important;
+  height: 110vh !important;
+
+  padding: 0;
+  object-fit: cover;
+
+  /* Centers the player */
+}
+
+/* Macbook 14 inch*/
+@media screen and (max-width: 1520px) {
+  .top-section {
+    margin-top: -20px;
+  }
+
+  .container-middle {
+    margin: -15vh -1vw 2vh;
+    gap: 90px;
+  }
+
+  .container-middle .panel-collapsible {
+    color: lightblue;
+    font-size: 35px;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+  }
+
+  .panel-collapsible h3 {
+    margin-bottom: 1px;
+    padding: 0 2vw 0;
+  }
+
+  .container-middle p {
+    font-size: 20px;
+    line-height: 1.5;
+
+    padding: 0 10px;
+  }
+}
+
+/*LAPTOP VIEW */
+
+@media screen and (max-width: 1024px) {
+  .top-body {
+    max-width: 1024px;
+  }
+
+  .big-button-container {
+    padding-top: 2vw;
+  }
+
+  .big-test-button {
+    height: 12vw;
+  }
+
+  .top-div-section {
+    padding-bottom: 10px;
+  }
+
+  .container-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: -22vh -1vw 2vh;
+    gap: 90px;
+  }
+
+  .container-middle .left-panel {
+    max-width: 940px;
+  }
+
+  .container-middle .middle-panel {
+    max-width: 940px;
+  }
+
+  .container-middle .right-panel {
+    max-width: 940px;
+  }
+
+  .panel-on-video {
+    width: 40vw;
+    height: 50vh;
+    margin-top: 30vh;
+    margin-left: 4vw;
+  }
+
+  .inner-video-container {
+    margin-top: -25vh;
+  }
+
+  .react-player {
+    width: 100vw !important;
+    height: 110vh !important;
+  }
+
+  .panel-on-video h3 {
+    font-size: 40px;
+  }
+
+  .panel-on-video p {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+/*TABLET VIEW */
+
+@media screen and (max-width: 768px) {
+  .top-body {
+    max-width: 768px;
+  }
+
+  .top-div-section .full-potential {
+    font-size: 40px;
+  }
+
+  .top-div-section p {
+    font-size: 25px;
+    margin: 4vh -3.5vw;
+  }
+
+  .big-button-container {
+    padding-top: 2vw;
+  }
+
+  .big-test-button {
+    height: 12vw;
+  }
+
+  .container-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: -4vh -2vw 10vh;
+
+    gap: 90px;
+  }
+
+  .container-middle .left-panel {
+    max-width: 700px;
+  }
+
+  .container-middle .middle-panel {
+    max-width: 700px;
+  }
+
+  .container-middle .right-panel {
+    max-width: 700px;
+  }
+
+  .panel-collapsible {
+    display: block !important;
+    /* Ensures the button is visible */
+    width: 100%;
+    /* Full width for better touch accessibility */
+    background: linear-gradient(135deg, #1a1f36, #3a506b);
+    /* Match panel background */
+    color: lightblue;
+    font-size: 30px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  .panel-collapsible h3 {
+    margin: 0;
+    padding: 10px;
+    color: inherit;
+  }
+
+  .big-test-button:focus {
+    background-color: #9acd32;
+    /* ✅ Ensures it resets */
+    outline: none;
+    /* Removes default focus border */
+  }
+
+  .planning-icon,
+  .mind-icon,
+  .takecontrol-icon {
+    display: block;
+    width: 50px;
+    /* Adjust size */
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .panel-on-video {
+    width: 83vw;
+    height: 40vh;
+    margin-top: 85vh;
+    margin-left: 4vw;
+  }
+
+  .inner-video-container {
+    margin-top: -45vh;
+  }
+
+  .react-player {
+    width: 100vw !important;
+    height: 110vh !important;
+  }
+
+  .panel-on-video h3 {
+    font-size: 40px;
+  }
+
+  .panel-on-video p {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+/*MOBILE VIEW Phone*/
+@media screen and (max-width: 500px) {
+  .top-body {
+    max-width: 500px;
+  }
+
+  .top-div-section .full-potential {
+    font-size: 40px;
+  }
+
+  .top-div-section p {
+    font-size: 25px;
+    margin: 4vh -3.5vw;
+  }
+
+  .top-div-section {
+    margin-top: 15vh;
+  }
+
+  .big-test-button {
+    height: 18vw;
+  }
+
+  .container-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: -15vh -15vw;
+    gap: 90px;
+    text-align: center;
+    max-width: 485px;
+    transform: scale(0.8);
+  }
+
+  .container-middle h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .container-middle p {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .panel-collapsible {
+    display: block !important;
+    /* Ensures the button is visible */
+    width: 100%;
+    /* Full width for better touch accessibility */
+    background: linear-gradient(135deg, #1a1f36, #3a506b);
+    /* Match panel background */
+    color: lightblue;
+    font-size: 30px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  .panel-collapsible h3 {
+    margin: 0;
+    padding: 10px;
+    color: inherit;
+  }
+
+  .big-test-button:focus {
+    background-color: #9acd32;
+    /* ✅ Ensures it resets */
+    outline: none;
+    /* Removes default focus border */
+  }
+
+  .planning-icon,
+  .mind-icon,
+  .takecontrol-icon {
+    display: block;
+    width: 50px;
+    /* Adjust size */
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .panel-on-video {
+    width: 78vw;
+    height: 40vh;
+    margin-top: 72vh;
+  }
+
+  .inner-video-container {
+    margin-top: -35vh;
+  }
+
+  .panel-on-video h3 {
+    font-size: 40px;
+  }
+
+  .panel-on-video p {
+    color: white;
+    font-size: 20px;
+  }
+}
